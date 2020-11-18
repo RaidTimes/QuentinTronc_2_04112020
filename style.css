@@ -1,0 +1,34 @@
+li
+{
+    display: inline;
+}
+
+a
+{
+    text-decoration: none;
+    /*text-align: center;*/
+    float: right;
+    padding: 14px 16px;
+    margin-top: -45px;
+}
+
+.act
+{
+    color: black;
+}
+
+.heber
+{
+    color:  rgb(47, 122, 219);
+}
+
+.heber2
+{
+    font-weight: bold;
+    color:  rgb(47, 122, 219);
+}
+
+footer
+{
+    background-color: gray;
+}
