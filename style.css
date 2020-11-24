@@ -1,15 +1,61 @@
-li
+/*
+bleu #0065FC
+bleu clair #DEEBFF
+gris #F2F2F2
+*/
+
+@font-face
 {
-    display: inline;
+    font-family: 'raleway';
+    src: url('assets/police/Raleway-Light.ttf');
 }
 
-a
+body
 {
-    text-decoration: none;
-    /*text-align: center;*/
-    float: right;
-    padding: 14px 16px;
-    margin-top: -45px;
+    font-family: 'raleway';
+}
+
+body,
+ul 
+{
+  margin: 0;
+  padding: 0;
+}
+
+#head
+{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo,
+nav
+{
+    flex: 0.2;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li 
+{
+    list-style: none;
+}
+
+.heberge
+{
+    color: #0065FC;
 }
 
 .act
@@ -17,18 +63,19 @@ a
     color: black;
 }
 
-.heber
-{
-    color:  rgb(47, 122, 219);
-}
-
-.heber2
+.inscri
 {
     font-weight: bold;
-    color:  rgb(47, 122, 219);
+    color:  #0065FC;
 }
+
+/*
+
+
+
+
 
 footer
 {
     background-color: gray;
-}
+}*/
