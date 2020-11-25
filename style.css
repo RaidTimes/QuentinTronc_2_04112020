@@ -21,7 +21,7 @@ ul
   margin: 0;
   padding: 0;
 }
-
+/* Header */
 #head
 {
     align-items: center;
@@ -30,16 +30,20 @@ ul
     margin: 2em;
 }
 
+#suithead
+{
+    margin-left: 2em;
+}
+
 header
 {
     display: flex;
     flex-direction: column;
 }
 
-#logo,
 nav
 {
-    flex: 0.2;
+    width: 20%;
 }
 
 nav ul
@@ -69,13 +73,35 @@ nav li
     color:  #0065FC;
 }
 
-/*
+/* Section recherche */
 
-
-
-
-
-footer
+#searchbar
 {
-    background-color: gray;
-}*/
+    margin-left: 2em;
+    /*position:relative; width:1040px; height:auto;*/
+    align-items: center;
+}
+
+.searchicon
+{
+    content: url(assets/img/search.svg);
+    height: 1%;
+    width: 1.5%;
+}
+
+.formulaire
+{
+    display:inline-block;
+}
+
+.formulaire .champ
+{
+    font-weight: bold;
+    width:200px; height:35px;
+}
+
+.formulaire .bouton
+{
+    background-color: #0065FC;
+    width: 30%;
+}
