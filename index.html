@@ -3,6 +3,7 @@
     <meta charset="utf-8" />
     <title>Reservia</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/66dc67b6bb.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -24,13 +25,43 @@
     <section>
         <div id="searchbar">
             <form action="" class="formulaire">
-                <i class="searchicon"></i>
+                <span id="searchicon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
                 <input class="champ" type="search" value="Marseille, France"/>
                 <input class="bouton" type="button" value="Rechercher" />
             </form>
         </div>
         <div id="filtre">
-            
+            <h4 class="act">Filtres</h4>
+            <span>
+                <span class="filcolor">
+                    <i class="fas fa-money-bill-wave"></i>
+                </span>
+                <a class="filtext" href="#">Economique</a>
+            </span>
+            <span>
+                <span class="filcolor">
+                    <i class="fas fa-child"></i>
+                </span>
+                <a class="filtext" href="#">Familial</a>
+            </span>
+            <span>
+                <span class="filcolor">
+                    <i class="fas fa-heart"></i>
+                </span>
+                <a class="filtext" href="#">Romantique</a>
+            </span>
+            <span>
+                <span class="filcolor">
+                    <i class="fas fa-dog"></i>
+                </span>
+                <a class="filtext" href="#">Animaux autorisés</a>
+            </span>
+        </div>
+        <div id="inf">
+            <i id="logoinf" class="fas fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
 
