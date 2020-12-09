@@ -2,6 +2,8 @@
 bleu #0065FC
 bleu clair #DEEBFF
 gris #F2F2F2
+
+Body
 */
 
 @font-face
@@ -14,169 +16,235 @@ body
 {
     font-family: 'raleway';
     background-color: white;
+    padding: 16px;
 }
-
-body,
-ul 
-{
-  margin: 0;
-  padding: 0;
-}
-/* Header */
-#head
-{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 2em;
-}
-
-#suithead
-{
-    margin-left: 2em;
-}
-
-header
-{
-    display: flex;
-    flex-direction: column;
-}
-
-nav
-{
-    width: 20%;
-}
-
-nav ul
-{
-    display: flex;
-    justify-content: space-between;
-}
-
-nav li 
-{
-    list-style: none;
-}
-
-.heberge
-{
-    color: #0065FC;
-}
-
-.heberge:hover
-{
-    border-top: 1px solid #0065FC;
-    cursor: pointer;
-}
-
-.act
-{
-    color: black;
-}
-
-.act:hover
-{
-    border-top: 1px solid #0065FC;
-    cursor: pointer;
-}
-
-.inscri
-{
-    font-weight: bold;
-    color:  #0065FC;
-}
-
-.inscri:hover
-{
-    border-top: 1px solid #0065FC;
-    cursor: pointer;
-}
-
-/* Section recherche */
-
-#searchbar
-{
-    display: flex;
-    margin-left: 2em;
-    position: relative; width:1040px; height:auto;
-    align-items: center;
-}
-
-#searchicon
-{
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding: 10px;
-    background: #F2F2F2;
-}
-
-.formulaire
-{
-    display:inline-block;
-}
-
-.formulaire .champ
-{
-    font-weight: bold;
-    width:200px; height:40px;
-}
-
-.formulaire .bouton
-{
-    background-color: #0065FC;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    width: 100px;
-}
-
-/* Filtres*/
 
 a:link
 {
     text-decoration: none;
 }
 
+/* Header */
+
+#head
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav
+{
+    width: 25%;
+}
+
+nav ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav li
+{
+    list-style: none;
+    border-top: 1px solid transparent;
+    color: #0065FC;
+}
+
+li:hover
+{
+    border-color: #0065FC;
+}
+
+li:visited
+{
+    color: black;
+}
+
+.gras
+{
+    font-weight: bold;
+}
+/* 
+    Section de recherche
+    Barre de recherche
+*/
+
+#searchbar
+{
+    display: flex;
+    width: 24%;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+}
+
+#searchicon
+{
+    padding: 12px;
+    background-color: #F2F2F2;
+    color: black;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.formulaire
+{
+    display: flex;
+}
+
+.formulaire .champ
+{
+    font-weight: bold;
+    border: none;
+    width: 200px;
+}
+
+.formulaire .bouton
+{
+    border-color: #0065FC;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border-radius: 0px 15px 15px 0px;
+    padding: 12px;
+}
+
+/*
+    Filtre
+*/
+
 #filtre
 {
     display: flex;
     flex-direction: row;
-    align-items: center ;
-    margin-left: 2em;
+    align-items: center;
     font-weight: bold;
     color: #0065FC;
 }
 
+.filtrebord
+{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 12px;
+    padding-right: 16px;
+}
+
+.filtrebord:hover
+{
+    cursor: pointer;
+}
+
 .filcolor
 {
-    border-radius: 100%;
+    border-radius: 50px;
     padding: 15px;
+    margin-left: -5px;
     background-color: #DEEBFF;
 }
 
 .filtext
 {
+    margin-left: 12px;
     color: black;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    padding: 10px;
 }
 
 #inf
 {
     display: flex;
-    margin-left: 2em;
     flex-direction: row;
     align-items: center;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #logoinf
 {
-    border-radius: 100%;
-    padding: 10px;
+    border: 1px solid #F2F2F2;
+    border-radius: 50px;
+    padding: 8px;
     color: #0065FC;
+}
+
+/*
+    Liste d'hébergements
+*/
+
+#listhebergement
+{
+    display: flex;
+    flex-direction: column;
     background-color: #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+    width: 960px;
+    height: 700px;
+}
+
+.lignehebergement
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#lignedeux
+{
+    margin-top: 25px;
+}
+
+.texthebergement
+{
+    padding: 20px;
+}
+
+.imghebergement
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 25px;
+    padding: 5px;
+    /*padding-left: 25px;*/
+}
+
+.ihtaille
+{
+    width: 275px;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.taillenom
+{
+    margin-top: 5px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.tailleprix
+{
+    margin-top: -10px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.etoile
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: -5px;
+    padding-left: 10px;
+}
+
+.etoilevalide
+{
+    color: #0065FC;
+}
+
+.etoileinvalide
+{
+    color: #F2F2F2;
 }
