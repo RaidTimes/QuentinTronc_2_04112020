@@ -110,6 +110,11 @@ li:visited
     padding: 12px;
 }
 
+.bouton:hover
+{
+    cursor: pointer;
+}
+
 /*
     Filtre
 */
@@ -129,6 +134,7 @@ li:visited
     align-items: center;
     border: 1px solid black;
     border-radius: 50px;
+    margin-left: 12px;
     margin: 12px;
     padding-right: 16px;
 }
@@ -148,7 +154,6 @@ li:visited
 
 .filtext
 {
-    margin-left: 12px;
     color: black;
 }
 
@@ -172,6 +177,13 @@ li:visited
     Liste d'hébergements
 */
 
+#sechp
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 #listhebergement
 {
     display: flex;
@@ -179,7 +191,7 @@ li:visited
     background-color: #F2F2F2;
     border-radius: 15px 15px 15px 15px;
     width: 960px;
-    height: 700px;
+    height: 670px;
 }
 
 .lignehebergement
@@ -208,6 +220,11 @@ li:visited
     margin-left: 25px;
     padding: 5px;
     /*padding-left: 25px;*/
+}
+
+.imghebergement:hover
+{
+    cursor: pointer;
 }
 
 .ihtaille
@@ -247,4 +264,57 @@ li:visited
 .etoileinvalide
 {
     color: #F2F2F2;
+}
+
+#afficherplus:hover
+{
+    cursor: pointer;
+}
+
+#populaire
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+    width: 400px;
+    height: 670px;
+}
+
+#titrepopu
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imgpopulaire
+{
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px
+}
+
+.iptaille
+{
+    width: 150px;
+    height: 125px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.colpop
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.etoilepop
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    padding-left: 10px;
 }
