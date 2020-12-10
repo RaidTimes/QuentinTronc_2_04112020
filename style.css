@@ -83,7 +83,6 @@ li:visited
     font-family: 'raleway-bold';
 }
 /* 
-    Section de recherche
     Barre de recherche
 */
 
@@ -236,7 +235,6 @@ li:visited
     border-radius: 15px 15px 15px 15px;
     margin-left: 25px;
     padding: 5px;
-    /*padding-left: 25px;*/
 }
 
 .imghebergement:hover
@@ -469,7 +467,8 @@ footer
     background-color: #F2F2F2;
     margin-left: -10px;
     margin-top: 50px;
-    width: 200%; height: 200%;
+    width: 200%; 
+    height: 200%;
     font-size: 18px;
 }
 
