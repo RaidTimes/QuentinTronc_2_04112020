@@ -11,14 +11,14 @@
             <img src="assets/img/Reservia.svg" alt="Logo header"/>
             <nav>
                 <ul>
-                    <li href="#">Hébergements</li>
-                    <li href="#">Activités</li>
+                    <li href="#listhebergement">Hébergements</li>
+                    <li href="#ancreactivite">Activités</li>
                     <li class="gras" href="#">S'inscrire</li>
                 </ul>
             </nav>
         </div>
         <div>
-            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <h2 class="gras">Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
     </header>
@@ -29,7 +29,7 @@
                     <i class="fas fa-map-marker-alt"></i>
                 </span>
                 <input class="champ" type="search" value="Marseille, France"/>
-                <input class="bouton" type="button" value="Rechercher" />
+                <input class="bouton" type="button" value="Rechercher"/>
             </form>
         </div>
         <div id="filtre">
@@ -68,7 +68,7 @@
         <div id="listhebergement">
             <h1 class="texthebergement">Hébergements à Marseille</h1>
             <div class="lignehebergement">
-                <div class="imghebergement">
+                <div class="imghebergement" href="#">
                     <img class="ihtaille" src="assets/img/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"/>
                     <p class="taillenom">Auberge la Cannebière</p>
                     <p class="tailleprix">Nuit à partir de <span class="gras">25€</span></p>
@@ -84,7 +84,7 @@
                         </span>
                     </span>
                 </div>
-                <div class="imghebergement">
+                <div class="imghebergement" href="#">
                     <img class="ihtaille" src="assets/img/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"/>
                     <p class="taillenom">Hôtel du port</p>
                     <p class="tailleprix">Nuit à partir de <span class="gras">52€</span></p>
@@ -98,7 +98,7 @@
                         </span>
                     </span>
                 </div>
-                <div class="imghebergement">
+                <div class="imghebergement" href="#">
                     <img class="ihtaille" src="assets/img/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes"/>
                     <p class="taillenom">Hôtel Les mouettes</p>
                     <p class="tailleprix">Nuit à partir de <span class="gras">76€</span></p>
@@ -115,7 +115,7 @@
                     </span>
                 </div>
             </div>
-            <div id="lignedeux" class="lignehebergement">
+            <div id="lignedeux" class="lignehebergement" href="#">
                 <div class="imghebergement">
                     <img class="ihtaille" src="assets/img/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"/>
                     <p class="taillenom">Hôtel de la mer</p>
@@ -132,7 +132,7 @@
                         </span>
                     </span>
                 </div>
-                <div class="imghebergement">
+                <div class="imghebergement" href="#">
                     <img class="ihtaille" src="assets/img/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"/>
                     <p class="taillenom">Auberge Le Panier</p>
                     <p class="tailleprix">Nuit à partir de <span class="gras">23€</span></p>
@@ -148,7 +148,7 @@
                         </span>
                     </span>
                 </div>
-                <div class="imghebergement">
+                <div class="imghebergement" href="#">
                     <img class="ihtaille" src="assets/img/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"/>
                     <p class="taillenom">Hôtel chez Amina</p>
                     <p class="tailleprix">Nuit à partir de <span class="gras">96€</span></p>
@@ -163,7 +163,7 @@
                     </span>
                 </div>
             </div>
-            <h1 id="afficherplus" class="texthebergement">Afficher plus</h1>
+            <h1 id="afficherplus" class="texthebergement" href="#">Afficher plus</h1>
         </div>
         <div id="populaire">
             <div>
@@ -171,7 +171,7 @@
                     <h1 class="texthebergement">Les plus populaires</h1>
                     <i class="fas fa-chart-line"></i>
                 </span>
-                <div class="imgpopulaire">
+                <div class="imgpopulaire" href="#">
                     <img class="iptaille" src="assets/img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin"/>
                     <span class="colpop">
                         <p class="taillenom">Hôtel Le soleil du matin</p>
@@ -187,7 +187,7 @@
                         </span>
                     </span>
                 </div>
-                <div class="imgpopulaire">
+                <div class="imgpopulaire" href="#">
                     <img class="iptaille" src="assets/img/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes"/>
                     <span class="colpop">
                         <p class="taillenom">Au coeur de l'eau Chambres d'hôtes</p>
@@ -205,7 +205,7 @@
                         </span>
                     </span>
                 </div>
-                <div class="imgpopulaire">
+                <div class="imgpopulaire" href="#">
                     <img class="iptaille" src="assets/img/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Hôtel Tout bleu et Blanc"/>
                     <span class="colpop">
                         <p class="taillenom">Hôtel Tout bleu et Blanc</p>
@@ -226,5 +226,56 @@
             </div>
         </div>
     </section>
+    <section id="secam">
+        <h1 id="ancreactivite" class="gras">Activités à Marseille</h1>
+        <div id="activite">
+            <div class="imgactgrand" href="#">
+                <img class="amtaillegrand" src="assets/img/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/>
+                <p class="activitenom">Vieux Port</p>
+            </div>
+            <div class="colact">
+                <div class="imgacthaut" href="#">
+                    <img class="amtaille" src="assets/img/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/>
+                    <p class="activitenom">Fort de Pomègues</p>
+                </div>
+                <div class="imgact" href="#">
+                    <img class="amtaille" src="assets/img/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"/>
+                    <p class="activitenom">Îles du Frioul</p>
+                </div>
+            </div>
+            <div id="margimg" class="imgactgrand" href="#">
+                <img class="amtaillegrand" src="assets/img/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"/>
+                <p class="activitenom">Parc National des Calanques</p>
+            </div>
+            <div class="colact">
+                <div class="imgacthaut" href="#">
+                    <img class="amtaille" src="assets/img/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/>
+                    <p class="activitenom">Notre-Dame-de-la-Garde</p>
+                </div>
+                <div class="imgact" href="#">
+                    <img class="amtaille" src="assets/img/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/>
+                    <p class="activitenom">Parc Longchamp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <p class="gras">A propos</p>
+            <p class="linkfooter" href="#">Fonctionnement du site</p>
+            <p class="linkfooter" href="#">Conditions générales de vente</p>
+            <p class="linkfooter" href="#">Données et confidentialité</p>
+        </div>
+        <div class="footcol">
+            <p class="gras">Nos hébergements</p>
+            <p class="linkfooter" href="#">Charte qualité</p>
+            <p class="linkfooter" href="#">Soumettre votre hôtel</p>
+        </div>
+        <div class="footcol">
+            <p class="gras">Assistance</p>
+            <p class="linkfooter" href="#">Centre d'aide</p>
+            <p class="linkfooter" href="#">Nous contacter</p>
+        </div>
+    </footer>
 
 </body>

@@ -12,11 +12,16 @@ Body
     src: url('assets/police/Raleway-Light.ttf');
 }
 
+@font-face
+{
+    font-family: 'raleway-bold';
+    src: url('assets/police/Raleway-bold.ttf')
+}
+
 body
 {
     font-family: 'raleway';
     background-color: white;
-    padding: 16px;
 }
 
 a:link
@@ -25,6 +30,16 @@ a:link
 }
 
 /* Header */
+
+header
+{
+    padding: 16px;
+}
+
+section
+{
+    padding: 16px;
+}
 
 #head
 {
@@ -55,6 +70,7 @@ nav li
 li:hover
 {
     border-color: #0065FC;
+    cursor: pointer;
 }
 
 li:visited
@@ -64,7 +80,7 @@ li:visited
 
 .gras
 {
-    font-weight: bold;
+    font-family: 'raleway-bold';
 }
 /* 
     Section de recherche
@@ -95,7 +111,7 @@ li:visited
 
 .formulaire .champ
 {
-    font-weight: bold;
+    font-family: 'raleway-bold';
     border: none;
     width: 200px;
 }
@@ -105,7 +121,7 @@ li:visited
     border-color: #0065FC;
     background-color: #0065FC;
     color: white;
-    font-weight: bold;
+    font-family: 'raleway-bold';
     border-radius: 0px 15px 15px 0px;
     padding: 12px;
 }
@@ -124,7 +140,7 @@ li:visited
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-weight: bold;
+    font-family: 'raleway-bold';
     color: #0065FC;
 }
 
@@ -132,11 +148,10 @@ li:visited
 {
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    border: 2px solid #F2F2F2;
     border-radius: 50px;
     margin-left: 12px;
     margin: 12px;
-    padding-right: 16px;
 }
 
 .filtrebord:hover
@@ -155,6 +170,7 @@ li:visited
 .filtext
 {
     color: black;
+    padding: 16px;
 }
 
 #inf
@@ -207,6 +223,7 @@ li:visited
 
 .texthebergement
 {
+    font-family: 'raleway-bold';
     padding: 20px;
 }
 
@@ -238,7 +255,7 @@ li:visited
 {
     margin-top: 5px;
     padding-left: 10px;
-    font-weight: bold;
+    font-family: 'raleway-bold';
 }
 
 .tailleprix
@@ -298,6 +315,11 @@ li:visited
     border-radius: 15px 15px 15px 15px
 }
 
+.imgpopulaire:hover
+{
+    cursor: pointer;
+}
+
 .iptaille
 {
     width: 150px;
@@ -317,4 +339,134 @@ li:visited
     flex-direction: row;
     margin-top: 40px;
     padding-left: 10px;
+}
+
+/* Activités à Marseille */
+
+#secam
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#activite
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.amtaillegrand
+{
+    width: 325px;
+    height: 400px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.imgactgrand
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+    width: 325px;
+    height: 450px;
+    margin-right: 25px;
+}
+
+.imgactgrand:hover
+{
+    cursor: pointer;
+}
+
+#margimg
+{
+    margin-left: 25px;
+}
+
+.activitenom
+{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-family: 'raleway-bold';
+}
+
+.amtaille
+{
+    width: 325px;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.imgacthaut
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+    width: 325px;
+    height: 200px;
+    margin-right: 25px;
+}
+
+.imgact
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+    width: 325px;
+    height: 200px;
+    margin-right: 25px;
+}
+
+.imgact:hover
+{
+    cursor: pointer;
+}
+
+.imgacthaut:hover
+{
+    cursor: pointer;
+}
+
+.colact
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 325px;
+    height: 450px;
+}
+
+/* 
+    Footer
+*/
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    margin-left: -10px;
+    margin-top: 50px;
+    width: 200%; height: 200%;
+}
+
+.foot
+{
+    margin: 25px;
+}
+
+.footcol
+{
+    margin-top: 25px;
+    margin-left: 275px;
+}
+
+.linkfooter:hover
+{
+    cursor: pointer;
 }
