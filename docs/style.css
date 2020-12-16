@@ -209,7 +209,7 @@ li:visited
     background-color: #F2F2F2;
     border-radius: 15px 15px 15px 15px;
     width: 1200px;
-    height: 700px;
+    height: 775px;
 }
 
 .lignehebergement
@@ -259,23 +259,22 @@ li:visited
 
 .taillenom
 {
-    margin-top: 5px;
     padding-left: 10px;
     font-family: 'raleway-bold';
+    font-size: 20px;
 }
 
 .tailleprix
 {
     margin-top: -10px;
     padding-left: 10px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .etoile
 {
     display: flex;
     flex-direction: row;
-    margin-top: -5px;
     padding-left: 10px;
 }
 
@@ -298,10 +297,11 @@ li:visited
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     background-color: #F2F2F2;
     border-radius: 15px 15px 15px 15px;
     width: 500px;
-    height: 700px;
+    height: 775px;
 }
 
 #titrepopu
@@ -340,6 +340,20 @@ li:visited
     height: 100%;
 }
 
+.ipltaille
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px 0px 0px 15px;
+    overflow: hidden;
+}
+
+.ipltaille img
+{
+    width: 100%;
+    height: 100%;
+}
+
 .ipdtaille
 {
     width: 150px;
@@ -357,13 +371,13 @@ li:visited
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .etoilepop
 {
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
     padding-left: 10px;
 }
 
@@ -379,7 +393,7 @@ li:visited
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .amtaillegrand
@@ -403,17 +417,11 @@ li:visited
     border-radius: 15px 15px 15px 15px;
     width: 415px;
     height: 600px;
-    margin-right: 25px;
 }
 
 .imgactgrand:hover
 {
     cursor: pointer;
-}
-
-#margimg
-{
-    margin-left: 25px;
 }
 
 .activitenom
@@ -457,7 +465,6 @@ li:visited
     border-radius: 15px 15px 15px 15px;
     width: 415px;
     height: 300px;
-    margin-right: 25px;
 }
 
 .imgfort:hover
@@ -473,7 +480,6 @@ li:visited
     border-radius: 15px 15px 15px 15px;
     width: 415px;
     height: 300px;
-    margin-right: 25px;
 }
 
 .imgparc:hover
@@ -490,7 +496,6 @@ li:visited
     border-radius: 15px 15px 15px 15px;
     width: 415px;
     height: 250px;
-    margin-right: 25px;
 }
 
 .imgact:hover
