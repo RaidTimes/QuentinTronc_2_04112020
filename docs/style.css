@@ -43,7 +43,7 @@ section
     padding: 16px;
 }
 
-#head
+.head
 {
     display: flex;
     align-items: center;
@@ -202,7 +202,7 @@ li:visited
     justify-content: space-around;
 }
 
-#listhebergement
+.listhebergement
 {
     display: flex;
     flex-direction: column;
@@ -389,7 +389,7 @@ li:visited
     flex-direction: column;
 }
 
-#activite
+.activite
 {
     display: flex;
     flex-direction: row;
@@ -545,4 +545,73 @@ footer
 .linkfooter:hover
 {
     cursor: pointer;
+}
+
+/*
+    Responsive
+*/
+
+@media all and (max-width: 600px)
+{
+    header
+    {
+        padding: 0px;
+    }
+    
+    section
+    {
+        padding: 0px;
+    }
+
+    .head
+    {
+        display: flex;
+        /*align-items: center;*/
+        justify-content: space-between;
+    }
+
+    nav
+    {
+        width: 0px;
+    }
+
+    nav ul
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    body
+    {
+        font-family: 'raleway'; 
+        background-color: white;
+        width: 600px;
+    }
+
+    .listhebergement
+    {
+        width: 300px;
+    }
+
+    .ihtaille
+    {
+        width: 150px;
+        height: 100px;
+    }
+
+    .imgpopulaire
+    {
+        width: 300px;
+    }
+
+    .mobilesechp
+    {
+        width: 600px;
+    }
+
+    .activite
+    {
+        width: 600px;
+    }
 }
