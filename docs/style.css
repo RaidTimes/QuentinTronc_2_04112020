@@ -551,7 +551,7 @@ footer
     Responsive
 */
 
-@media all and (max-width: 600px)
+@media screen and (max-width: 375px)
 {
     header
     {
@@ -561,13 +561,6 @@ footer
     section
     {
         padding: 0px;
-    }
-
-    .head
-    {
-        display: flex;
-        /*align-items: center;*/
-        justify-content: space-between;
     }
 
     nav
@@ -586,18 +579,29 @@ footer
     {
         font-family: 'raleway'; 
         background-color: white;
-        width: 600px;
+        width: 375px;
     }
 
     .listhebergement
     {
-        width: 300px;
+        order: 2;
+        width: 0px;
+        border-radius: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+
+    .imghebergement
+    {
+        width: 375px;
+        margin-left: 0px;
     }
 
     .ihtaille
     {
-        width: 150px;
-        height: 100px;
+        width: 350px;
+        height: 150px;
     }
 
     .imgpopulaire
@@ -605,13 +609,105 @@ footer
         width: 300px;
     }
 
+    #populaire
+    {
+        border-radius: 0px;
+        width: 100%;
+    }
+
     .mobilesechp
     {
-        width: 600px;
+        width: 375px;
     }
 
     .activite
     {
-        width: 600px;
+        width: 375px;
+        flex-direction: column;
+    }
+
+    #filtre
+    {
+        flex-wrap: wrap;
+        width: 375px;
+    }
+
+    .lignehebergement
+    {
+        flex-direction: column;
+    }
+
+    #sechp
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer
+    {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .foot
+    {
+        margin: 0px;
+    }
+
+    .footcol
+    {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .mobileallheader
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .mobileheader
+    {
+        order: 2;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imgactgrand
+    {
+        width: 375px;
+        height: 600px;
+    }
+
+    .imgact
+    {
+        width: 375px;
+    }
+
+    .imgparc
+    {
+        width: 375px;
+    }
+
+    .imgfort
+    {
+        width: 375px;
+    }
+
+    .amtaillegrand
+    {
+        width: 375px;
+    }
+
+    .taillefort
+    {
+        width: 375px;
+    }
+
+    .amtaille
+    {
+        width: 375px;
     }
 }
