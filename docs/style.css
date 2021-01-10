@@ -22,6 +22,8 @@ body
 {
     font-family: 'raleway';
     background-color: white;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
     height: 100%;
 }
@@ -59,7 +61,7 @@ nav ul
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav li
@@ -81,6 +83,11 @@ li:visited
 }
 
 .gras
+{
+    font-family: 'raleway-bold';
+}
+
+.grasin
 {
     font-family: 'raleway-bold';
 }
@@ -262,6 +269,7 @@ li:visited
     padding-left: 10px;
     font-family: 'raleway-bold';
     font-size: 20px;
+    flex-wrap: wrap;
 }
 
 .tailleprix
@@ -551,11 +559,17 @@ footer
     Responsive
 */
 
-@media screen and (max-width: 375px)
+@media screen and (max-width: 980px)
 {
     header
     {
         padding: 0px;
+    }
+
+    .head
+    {
+        flex-direction: column;
+        align-items: flex-start;
     }
     
     section
@@ -565,21 +579,26 @@ footer
 
     nav
     {
-        width: 0px;
+        width: 100%;
     }
 
     nav ul
     {
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
+    }
+
+    .grasin
+    {
+        position: absolute;
+        top: 2%;    right: 10%;
     }
 
     body
     {
         font-family: 'raleway'; 
         background-color: white;
-        width: 375px;
+        width: 100%;
     }
 
     .listhebergement
@@ -587,49 +606,55 @@ footer
         order: 2;
         width: 0px;
         border-radius: 0px;
+        width: 90%;
         height: 100%;
-        width: 100%;
         background-color: white;
     }
 
     .imghebergement
     {
-        width: 375px;
+        width: 100%;
         margin-left: 0px;
+        margin: 0px;
+        align-items: center;
     }
 
     .ihtaille
     {
-        width: 350px;
+        width: 75%;
         height: 150px;
     }
 
     .imgpopulaire
     {
-        width: 300px;
+        width: 75%;
     }
 
     #populaire
     {
         border-radius: 0px;
         width: 100%;
+        align-items: center;
     }
 
     .mobilesechp
     {
-        width: 375px;
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
 
     .activite
     {
-        width: 375px;
+        width: 100%;
         flex-direction: column;
+        align-items: center;
     }
 
     #filtre
     {
         flex-wrap: wrap;
-        width: 375px;
+        width: 100%;
     }
 
     .lignehebergement
@@ -661,53 +686,44 @@ footer
         margin-left: 0px;
     }
 
-    .mobileallheader
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .mobileheader
-    {
-        order: 2;
-        display: flex;
-        flex-direction: row;
-    }
-
     .imgactgrand
     {
-        width: 375px;
-        height: 600px;
+        width: 100%;
+        max-width: 90%;
     }
 
     .imgact
     {
-        width: 375px;
+        width: 100%;
+        max-width: 90%;
     }
 
     .imgparc
     {
-        width: 375px;
+        width: 100%;
+        max-width: 90%;
     }
 
     .imgfort
     {
-        width: 375px;
+        width: 100%;
+        max-width: 90%;
     }
 
     .amtaillegrand
     {
-        width: 375px;
+        width: 90%;
     }
 
     .taillefort
     {
-        width: 375px;
+        width: 100%;
     }
 
     .amtaille
     {
-        width: 375px;
+        width: 100%;
     }
 }
+
+/* position absolute*/
