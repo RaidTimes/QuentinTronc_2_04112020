@@ -98,8 +98,8 @@ li:visited
 #searchbar
 {
     display: flex;
-    width: 300px;
     align-items: center;
+    width: 15%;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
 }
@@ -121,7 +121,6 @@ li:visited
 {
     font-family: 'raleway-bold';
     border: none;
-    width: 200px;
 }
 
 .formulaire .bouton
@@ -150,6 +149,12 @@ li:visited
     align-items: center;
     font-family: 'raleway-bold';
     color: #0065FC;
+}
+
+#mobilefiltre
+{
+    display: flex;
+    flex-direction: row;
 }
 
 .filtrebord
@@ -215,7 +220,7 @@ li:visited
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 15px 15px 15px 15px;
-    width: 1200px;
+    width: 70%;
     height: 775px;
 }
 
@@ -253,7 +258,7 @@ li:visited
 
 .ihtaille
 {
-    width: 350px;
+    width: 350px;/*50%;*/
     height: 150px;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
@@ -326,6 +331,7 @@ li:visited
     flex-direction: row;
     margin: 30px;
     padding: 5px;
+    height: 150px;
     background-color: white;
     border-radius: 15px 15px 15px 15px
 }
@@ -338,41 +344,22 @@ li:visited
 .iptaille
 {
     width: 150px;
-    height: 150px;
     border-radius: 15px 0px 0px 15px;
     overflow: hidden;
-}
-
-.iptaille img
-{
-    height: 100%;
 }
 
 .ipltaille
 {
     width: 150px;
-    height: 150px;
     border-radius: 15px 0px 0px 15px;
     overflow: hidden;
-}
-
-.ipltaille img
-{
-    width: 100%;
-    height: 100%;
 }
 
 .ipdtaille
 {
     width: 150px;
-    height: 150px;
     border-radius: 15px 0px 0px 15px;
     overflow: hidden;
-}
-
-.ipdtaille img
-{
-    width: 100%;
 }
 
 .colpop
@@ -410,11 +397,6 @@ li:visited
     height: 525px;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
-}
-
-.amtaillegrand img
-{
-    height: 100%;
 }
 
 .imgactgrand
@@ -499,7 +481,6 @@ li:visited
 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     border: 1px solid #F2F2F2;
     border-radius: 15px 15px 15px 15px;
     width: 415px;
@@ -594,6 +575,11 @@ footer
         top: 2%;    right: 10%;
     }
 
+    h2
+    {
+        flex-wrap: wrap;
+    }
+
     body
     {
         font-family: 'raleway'; 
@@ -601,33 +587,39 @@ footer
         width: 100%;
     }
 
+    #searchbar
+    {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #mobilefiltre
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .listhebergement
     {
         order: 2;
-        width: 0px;
         border-radius: 0px;
-        width: 90%;
+        width: 100%;
         height: 100%;
         background-color: white;
     }
 
     .imghebergement
     {
-        width: 100%;
+        width: 90%;
         margin-left: 0px;
-        margin: 0px;
         align-items: center;
     }
 
     .ihtaille
     {
-        width: 75%;
+        width: 100%;
         height: 150px;
-    }
-
-    .imgpopulaire
-    {
-        width: 75%;
     }
 
     #populaire
@@ -646,26 +638,38 @@ footer
 
     .activite
     {
-        width: 100%;
         flex-direction: column;
         align-items: center;
     }
 
     #filtre
     {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
         width: 100%;
     }
 
     .lignehebergement
     {
         flex-direction: column;
+        align-items: center;
+    }
+
+    #lignedeux
+    {
+        margin-top: 0px;
     }
 
     #sechp
     {
         display: flex;
         flex-direction: column;
+    }
+
+    .imgpopulaire
+    {
+        width: 80%;
+        height: 150px;
     }
 
     footer
@@ -688,36 +692,50 @@ footer
 
     .imgactgrand
     {
-        width: 100%;
-        max-width: 90%;
+        width: 90%;
+        height: 200px;
+        margin-bottom: 15px;
     }
 
     .imgact
     {
         width: 100%;
         max-width: 90%;
+        height: 200px;
+        margin-bottom: 15px;
     }
 
     .imgparc
     {
         width: 100%;
         max-width: 90%;
+        height: 200px;
+        margin-bottom: 15px;
     }
 
     .imgfort
     {
         width: 100%;
         max-width: 90%;
+        height: 200px;
+        margin-bottom: 15px;
     }
 
     .amtaillegrand
     {
-        width: 90%;
+        width: 100%;
     }
 
     .taillefort
     {
         width: 100%;
+    }
+
+    .colact
+    {
+        align-items: center;
+        width: 100%;
+        height: 100%;
     }
 
     .amtaille
