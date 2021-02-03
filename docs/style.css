@@ -133,6 +133,11 @@ li:visited
     padding: 12px;
 }
 
+.boutonmobile
+{
+    display: none;
+}
+
 .bouton:hover
 {
     cursor: pointer;
@@ -333,7 +338,7 @@ li:visited
     padding: 5px;
     height: 150px;
     background-color: white;
-    border-radius: 15px 15px 15px 15px
+    border-radius: 15px 15px 15px 15px;
 }
 
 .imgpopulaire:hover
@@ -350,7 +355,7 @@ li:visited
 
 .ipltaille
 {
-    width: 150px;
+    width: 175px;
     border-radius: 15px 0px 0px 15px;
     overflow: hidden;
 }
@@ -567,6 +572,29 @@ footer
     {
         display: flex;
         justify-content: space-around;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    .formulaire .champ
+    {
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+    }
+
+    .formulaire .bouton
+    {
+        display: none;
+    }
+
+    .boutonmobile
+    {
+        display: flex;
+        border-color: #0065FC;
+        background-color: #0065FC;
+        color: white;
+        font-family: 'raleway-bold';
+        border-radius: 0px 15px 15px 0px;
+        padding: 12px;
     }
 
     .grasin
@@ -590,7 +618,13 @@ footer
     #searchbar
     {
         justify-content: center;
+        border: none;
         width: 100%;
+    }
+
+    nav li
+    {
+        border: none;
     }
 
     #mobilefiltre
@@ -614,6 +648,10 @@ footer
         width: 90%;
         margin-left: 0px;
         align-items: center;
+        padding: 0px;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #F2F2F2;
     }
 
     .ihtaille
@@ -695,6 +733,7 @@ footer
         width: 90%;
         height: 200px;
         margin-bottom: 15px;
+        overflow: hidden;
     }
 
     .imgact
@@ -703,6 +742,7 @@ footer
         max-width: 90%;
         height: 200px;
         margin-bottom: 15px;
+        overflow: hidden;
     }
 
     .imgparc
@@ -711,6 +751,7 @@ footer
         max-width: 90%;
         height: 200px;
         margin-bottom: 15px;
+        overflow: hidden;
     }
 
     .imgfort
@@ -719,9 +760,10 @@ footer
         max-width: 90%;
         height: 200px;
         margin-bottom: 15px;
+        overflow: hidden;
     }
 
-    .amtaillegrand
+    .amtaillegrand img
     {
         width: 100%;
     }
@@ -741,6 +783,16 @@ footer
     .amtaille
     {
         width: 100%;
+    }
+
+    .taillenom
+    {
+        font-size: 16px;
+    }
+
+    .tailleprix
+    {
+        font-size: 14px;
     }
 }
 
