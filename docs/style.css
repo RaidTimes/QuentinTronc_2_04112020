@@ -99,16 +99,12 @@ li:visited
 {
     display: flex;
     align-items: center;
-    width: 15%;
-    border: 1px solid #F2F2F2;
-    border-radius: 15px;
 }
 
 #searchicon
 {
     padding: 12px;
     background-color: #F2F2F2;
-    color: black;
     border-radius: 15px 0px 0px 15px;
 }
 
@@ -120,7 +116,8 @@ li:visited
 .formulaire .champ
 {
     font-family: 'raleway-bold';
-    border: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
 }
 
 .formulaire .bouton
@@ -664,7 +661,7 @@ footer
     {
         border-radius: 0px;
         width: 100%;
-        align-items: center;
+        align-content: center;
     }
 
     .mobilesechp
@@ -706,7 +703,11 @@ footer
 
     .imgpopulaire
     {
-        width: 80%;
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 5px;
+        margin-bottom: 25px;
+        width: 90%;
         height: 150px;
     }
 
@@ -730,7 +731,8 @@ footer
 
     .imgactgrand
     {
-        width: 90%;
+        width: 100%;
+        max-width: 90%;
         height: 200px;
         margin-bottom: 15px;
         overflow: hidden;
