@@ -22,8 +22,6 @@ body
 {
     font-family: 'raleway';
     background-color: white;
-    margin: 0px;
-    padding: 0px;
     width: 100%;
     height: 100%;
 }
@@ -31,6 +29,15 @@ body
 a:link
 {
     text-decoration: none;
+}
+.coloract:visited
+{
+    color: black;
+}
+
+.colorheb:visited
+{
+    color: #0065FC;
 }
 
 /* Header */
@@ -77,11 +84,6 @@ li:hover
     cursor: pointer;
 }
 
-li:visited
-{
-    color: black;
-}
-
 .gras
 {
     font-family: 'raleway-bold';
@@ -118,6 +120,7 @@ li:visited
     font-family: 'raleway-bold';
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
+    border-left: 0px;
 }
 
 .formulaire .bouton
@@ -163,7 +166,7 @@ li:visited
 {
     display: flex;
     align-items: center;
-    border: 2px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
     border-radius: 50px;
     margin-left: 12px;
     margin: 12px;
@@ -220,9 +223,10 @@ li:visited
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background-color: #F2F2F2;
     border-radius: 15px 15px 15px 15px;
-    width: 70%;
+    width: 65%;
     height: 775px;
 }
 
@@ -230,17 +234,13 @@ li:visited
 {
     display: flex;
     flex-direction: row;
-}
-
-#lignedeux
-{
-    margin-top: 25px;
+    justify-content: space-evenly;
 }
 
 .texthebergement
 {
     font-family: 'raleway-bold';
-    padding: 20px;
+    padding-left: 25px;
 }
 
 .imghebergement
@@ -249,7 +249,7 @@ li:visited
     flex-direction: column;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    margin-left: 25px;
+    width: 30%;
     padding: 5px;
 }
 
@@ -260,7 +260,7 @@ li:visited
 
 .ihtaille
 {
-    width: 350px;/*50%;*/
+    width: 100%;
     height: 150px;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
@@ -308,31 +308,35 @@ li:visited
     cursor: pointer;
 }
 
-#populaire
+.populaire
 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
     background-color: #F2F2F2;
     border-radius: 15px 15px 15px 15px;
-    width: 500px;
+    width: 30%;
     height: 775px;
 }
 
-#titrepopu
+.titrepopu
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+}
+
+#faspop
+{
+    font-size: 25px;
 }
 
 .imgpopulaire
 {
     display: flex;
     flex-direction: row;
-    margin: 30px;
     padding: 5px;
+    width: 90%;
     height: 150px;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
@@ -345,21 +349,21 @@ li:visited
 
 .iptaille
 {
-    width: 150px;
+    width: 40%;
     border-radius: 15px 0px 0px 15px;
     overflow: hidden;
 }
 
 .ipltaille
 {
-    width: 175px;
+    width: 50%;
     border-radius: 15px 0px 0px 15px;
     overflow: hidden;
 }
 
 .ipdtaille
 {
-    width: 150px;
+    width: 40%;
     border-radius: 15px 0px 0px 15px;
     overflow: hidden;
 }
@@ -395,7 +399,7 @@ li:visited
 
 .amtaillegrand
 {
-    width: 415px;
+    width: 100%;
     height: 525px;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
@@ -407,7 +411,7 @@ li:visited
     flex-direction: column;
     border: 1px solid #F2F2F2;
     border-radius: 15px 15px 15px 15px;
-    width: 415px;
+    width: 23%;
     height: 600px;
 }
 
@@ -425,7 +429,7 @@ li:visited
 
 .amtaille
 {
-    width: 415px;
+    width: 100%;
     height: 200px;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
@@ -438,7 +442,7 @@ li:visited
 
 .taillefort
 {
-    width: 415px;
+    width: 100%;
     height: 250px;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
@@ -455,7 +459,7 @@ li:visited
     flex-direction: column;
     border: 1px solid #F2F2F2;
     border-radius: 15px 15px 15px 15px;
-    width: 415px;
+    width: 100%;
     height: 300px;
 }
 
@@ -470,7 +474,7 @@ li:visited
     flex-direction: column;
     border: 1px solid #F2F2F2;
     border-radius: 15px 15px 15px 15px;
-    width: 415px;
+    width: 100%;
     height: 300px;
 }
 
@@ -485,7 +489,7 @@ li:visited
     flex-direction: column;
     border: 1px solid #F2F2F2;
     border-radius: 15px 15px 15px 15px;
-    width: 415px;
+    width: 100%;
     height: 250px;
 }
 
@@ -504,7 +508,7 @@ li:visited
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 415px;
+    width: 23%;
     height: 600px;
 }
 
@@ -657,7 +661,7 @@ footer
         height: 150px;
     }
 
-    #populaire
+    .populaire
     {
         border-radius: 0px;
         width: 100%;
