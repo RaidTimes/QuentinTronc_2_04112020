@@ -15,7 +15,13 @@ Body
 @font-face
 {
     font-family: 'raleway-bold';
-    src: url('assets/police/Raleway-bold.ttf')
+    src: url('assets/police/Raleway-Bold.ttf')
+}
+
+main
+{
+    max-width: 1440px;
+    margin: auto;
 }
 
 body
@@ -24,6 +30,8 @@ body
     background-color: white;
     width: 100%;
     height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 a:link
@@ -170,6 +178,7 @@ li:hover
     border-radius: 50px;
     margin-left: 12px;
     margin: 12px;
+    padding-right: 12px;
 }
 
 .filtrebord:hover
@@ -181,6 +190,7 @@ li:hover
 {
     border-radius: 50px;
     padding: 15px;
+    margin-right: 12px;
     margin-left: -5px;
     background-color: #DEEBFF;
 }
@@ -189,7 +199,6 @@ li:hover
 {
     color: black;
     font-family: 'raleway-bold';
-    padding: 16px;
 }
 
 #inf
@@ -205,7 +214,13 @@ li:hover
     border: 1px solid #F2F2F2;
     border-radius: 50px;
     padding: 8px;
+    font-size: 16px;
     color: #0065FC;
+}
+
+i
+{
+    font-size: 18px;
 }
 
 /*
@@ -216,7 +231,7 @@ li:hover
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .listhebergement
@@ -226,7 +241,7 @@ li:hover
     justify-content: space-around;
     background-color: #F2F2F2;
     border-radius: 15px 15px 15px 15px;
-    width: 65%;
+    width: 67%;
     height: 775px;
 }
 
@@ -397,7 +412,7 @@ li:hover
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .amtaillegrand
@@ -453,6 +468,7 @@ li:hover
 
 .taillefort img
 {
+    max-height: 100%;
     width: 100%;
 }
 
