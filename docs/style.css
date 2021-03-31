@@ -48,6 +48,15 @@ a:link
     color: #0065FC;
 }
 
+i
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+
 /* Header */
 
 header
@@ -284,6 +293,7 @@ i
 .ihtaille img
 {
     width: 100%;
+    max-height: 100%;
 }
 
 .taillenom
@@ -372,18 +382,23 @@ i
     overflow: hidden;
 }
 
+.iptaille img
+{
+    width: 100%;
+    height: 100%;
+}
+
 .ipltaille
 {
-    width: 50%;
+    width: 60%;
     border-radius: 15px 0px 0px 15px;
     overflow: hidden;
 }
 
-.ipdtaille
+.ipltaille img
 {
-    width: 40%;
-    border-radius: 15px 0px 0px 15px;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .colpop
@@ -423,6 +438,12 @@ i
     overflow: hidden;
 }
 
+.amtaillegrand img
+{
+    width: 100%;
+    height: 100%
+}
+
 .imgactgrand
 {
     display: flex;
@@ -456,6 +477,7 @@ i
 .amtaille img
 {
     width: 100%;
+    height: 90%;
 }
 
 .taillefort
@@ -468,7 +490,7 @@ i
 
 .taillefort img
 {
-    max-height: 100%;
+    height: 90%;
     width: 100%;
 }
 
@@ -565,8 +587,13 @@ footer
     Responsive
 */
 
-@media screen and (max-width: 980px)
+@media screen and (max-width: 1024px)
 {
+    p
+    {
+        font-size: 16px;
+    }
+
     header
     {
         padding: 0px;
@@ -592,7 +619,6 @@ footer
     {
         display: flex;
         justify-content: space-around;
-        border-bottom: 2px solid #F2F2F2;
     }
 
     .formulaire .champ
@@ -626,6 +652,7 @@ footer
     h2
     {
         flex-wrap: wrap;
+        font-size: 20px;
     }
 
     body
@@ -654,39 +681,6 @@ footer
         flex-wrap: wrap;
     }
 
-    .listhebergement
-    {
-        order: 2;
-        border-radius: 0px;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-    }
-
-    .imghebergement
-    {
-        width: 90%;
-        margin-left: 0px;
-        align-items: center;
-        padding: 0px;
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-        border: 1px solid #F2F2F2;
-    }
-
-    .ihtaille
-    {
-        width: 100%;
-        height: 150px;
-    }
-
-    .populaire
-    {
-        border-radius: 0px;
-        width: 100%;
-        align-content: center;
-    }
-
     .mobilesechp
     {
         display: flex;
@@ -709,8 +703,9 @@ footer
 
     .lignehebergement
     {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        width: 100%;
     }
 
     #lignedeux
@@ -721,7 +716,7 @@ footer
     #sechp
     {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .imgpopulaire
@@ -821,4 +816,276 @@ footer
     }
 }
 
-/* position absolute*/
+@media screen and (max-width: 768px)
+{
+    h1
+    {
+        font-size: 20px;
+    }
+
+    header
+    {
+        padding: 5px;
+    }
+
+    .head
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    section
+    {
+        padding: 0px;
+    }
+
+    nav
+    {
+        width: 100%;
+    }
+
+    nav ul
+    {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .formulaire .champ
+    {
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+    }
+
+    .formulaire .bouton
+    {
+        display: none;
+    }
+
+    .boutonmobile
+    {
+        display: flex;
+        border-color: #0065FC;
+        background-color: #0065FC;
+        color: white;
+        font-family: 'raleway-bold';
+        border-radius: 0px 15px 15px 0px;
+        padding: 12px;
+    }
+
+    .grasin
+    {
+        position: absolute;
+        top: 2%;    right: 10%;
+    }
+
+    h2
+    {
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    body
+    {
+        font-family: 'raleway'; 
+        background-color: white;
+        width: 100%;
+    }
+
+    #searchbar
+    {
+        justify-content: center;
+        border: none;
+        width: 100%;
+    }
+
+    nav li
+    {
+        border: none;
+    }
+
+    #filtre
+    {
+        padding: 5px;
+    }
+
+    #inf
+    {
+        padding: 5px;
+    }
+
+    #mobilefiltre
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .listhebergement
+    {
+        order: 2;
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+
+    .imghebergement
+    {
+        width: 90%;
+        margin-left: 0px;
+        align-items: center;
+        padding: 0px;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #F2F2F2;
+    }
+
+    .ihtaille
+    {
+        width: 100%;
+        height: 150px;
+    }
+
+    .populaire
+    {
+        border-radius: 0px;
+        width: 100%;
+        align-content: center;
+    }
+
+    .mobilesechp
+    {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .activite
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #filtre
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .lignehebergement
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lignedeux
+    {
+        margin-top: 0px;
+    }
+
+    #sechp
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgpopulaire
+    {
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 5px;
+        margin-bottom: 25px;
+        width: 90%;
+        height: 150px;
+    }
+
+    footer
+    {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 5px;
+    }
+
+    .foot
+    {
+        margin: 0px;
+    }
+
+    .footcol
+    {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .imgactgrand
+    {
+        width: 100%;
+        max-width: 90%;
+        height: 200px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    .imgact
+    {
+        width: 100%;
+        max-width: 90%;
+        height: 200px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    .imgparc
+    {
+        width: 100%;
+        max-width: 90%;
+        height: 200px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    .imgfort
+    {
+        width: 100%;
+        max-width: 90%;
+        height: 200px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    .amtaillegrand img
+    {
+        width: 100%;
+    }
+
+    .taillefort
+    {
+        width: 100%;
+    }
+
+    .colact
+    {
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .amtaille
+    {
+        width: 100%;
+    }
+
+    .taillenom
+    {
+        font-size: 16px;
+    }
+
+    .tailleprix
+    {
+        font-size: 14px;
+    }
+}
