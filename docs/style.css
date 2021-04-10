@@ -287,6 +287,11 @@ i
     padding-left: 25px;
 }
 
+.textact
+{
+    font-family: 'raleway-bold';
+}
+
 .imghebergement
 {
     display: flex;
@@ -624,7 +629,6 @@ footer
     display: flex;
     flex-direction: row;
     background-color: #F2F2F2;
-    margin-left: -10px;
     margin-top: 50px;
     font-size: 18px;
 }
@@ -632,12 +636,13 @@ footer
 .foot
 {
     margin: 25px;
+    margin-left: 205px;
 }
 
 .footcol
 {
     margin-top: 25px;
-    margin-left: 375px;
+    margin-left: 300px;
 }
 
 .linkfooter:hover
@@ -1010,6 +1015,12 @@ footer
         padding: 5px;
     }
 
+    .textact
+    {
+        font-family: 'raleway-bold';
+        padding-left: 25px;
+    }
+
     #mobilefiltre
     {
         display: flex;
@@ -1108,12 +1119,13 @@ footer
     .foot
     {
         margin: 0px;
+        margin-left: 15px;
     }
 
     .footcol
     {
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: 15px;
     }
 
     .imgactgrand
